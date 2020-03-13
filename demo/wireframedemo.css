@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Courier New",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    font-size: 20px;
+    background-color: purple;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  header {
+    padding: 12% 0;
+  }
+  
+  section {
+    min-height: 50px;
+    min-width: 200px;
+    padding: 50px;
+    color: white;
+    background-color:goldenrod;
+  
+  }
+
+  section:nth-child(even) {
+    background-color:goldenrod;
+  }
+
+  .icon-bar a:hover {
+    background-color: goldenrod; /* Add a hover color */
+  }
+
+  .bottom-bar a:hover {
+    background-color: goldenrod;
+  }
+
+  .bottom-bar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
