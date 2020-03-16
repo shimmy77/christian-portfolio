@@ -1,21 +1,35 @@
 * {
     box-sizing: border-box;
   }
+
+  i {
+    width: 50px;
+    height: 60px;
+  }
   
   body {
     font-family: "Courier New",
     sans-serif; 
-    font-size: 20px;
-    color: #444;
+    font-size: 50px;
+    color: Black;
     text-align: center;
     line-height: 1.5;
   }
+
+  header {
+    color: orange;
+  }
+
+  .body {
+    width: 100%;
+  }
   
+
   nav,
   footer {
     padding: 1% 0;
     font-size: 20px;
-    background-color: purple;
+   
   }
   
   nav {
@@ -29,26 +43,33 @@
   header {
     padding: 12% 0;
   }
+
+  h3 {
+    display: flex
+    margin-top: -250px;
+    margin-bottom: -700px;
+  }
   
   section {
-    min-height: 50px;
     min-width: 200px;
     padding: 50px;
     color: white;
-    background-color:goldenrod;
   
   }
 
-  section:nth-child(even) {
-    background-color:goldenrod;
+  section:nth-child(2) {
+  
+    background-color: rgb(218, 122, 32);
   }
 
   .icon-bar a:hover {
-    background-color: goldenrod; /* Add a hover color */
+    background-color: rgb(218, 122, 32); 
+    width: 50px;
+    height: 60px;
   }
 
   .bottom-bar a:hover {
-    background-color: goldenrod;
+    background-color: rgb(218, 122, 32);
   }
 
   .bottom-bar {
