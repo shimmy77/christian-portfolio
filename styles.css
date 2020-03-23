@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+
+  i {
+    width: 50px;
+    height: 60px;
+  }
+  
+  body {
+    font-family: "Courier New",
+    sans-serif; 
+    font-size: 50px;
+    color: Black;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  header {
+    color: orange;
+  }
+
+  body {
+    background-size: 100% 100%;
+  }
+  
+
+  nav,
+  footer {
+    padding: 1% 0;
+    font-size: 20px;
+   
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  header {
+    padding: 12% 0;
+    margin-top: -250px;
+  }
+
+  img.me-img {
+      height: 500px;
+  }
+
+  h3 {
+    display: flex
+    margin-top: -250px;
+    margin-bottom: -700px;
+  }
+  
+  section {
+    min-width: 200px; 
+    padding: 10px;
+    color: white;
+  }
+    
+   
+  section:nth-child(2) {
+    background-color: rgb(218, 122, 32);
+  }
+
+  .icon-bar a:hover {
+    background-color: rgb(218, 122, 32); 
+    width: 50px;
+    height: 60px;
+  }
+
+  .bottom-bar a:hover {
+    background-color: rgb(218, 122, 32);
+  }
+
+  .bottom-bar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
