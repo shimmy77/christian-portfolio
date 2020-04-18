@@ -1,100 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+
 * {
-    
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+  font-family: "OCR A Std", monospace;
+}
 
-  i {
-    width: 50px;
-    height: 60px;
-  }
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+.highlight {
+  background-color: #00203FFF;
+  color: #ADEFD1FF;
   
-  body {
-    font-family: "Courier New",
-    sans-serif; 
-    font-size: 30px;
-    color: orange;
-    text-align: center;
-    line-height: 1.5;
-  }
+}
+
+body {
+  font-family: "OCR A Std", monospace;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #00203FFF;
+  color: #ADEFD1FF;
+}
+
+h1, h2, h3 {
+  font-family: "OCR A Std", monospace;
+}
+
+li {
+  margin-right: 20%;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #00203FFF;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #ADEFD1FF;
+  border-bottom: 5px solid white;
+  z-index: 10;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+nav > ul > li > a {
+  color: #ADEFD1FF;
+  margin-right: 20px;
+}
+
+.hamburger {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+section {
+  min-height: 200px;
+  padding: 20% 0%;
+  background-color: #ADEFD1FF;
+  color: #155263;
+}
+
+section:nth-child(even) {
+  background-color: #155263;
+  color: #ADEFD1FF;
+}
+
+.me-img {
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  border: 1px solid #155263;
+  border-radius: 10%;
+}
+
+.content {
+  margin: 25px 15px;
+  text-align: left;
+}
+
+.project {
+  margin: 50px auto;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+}
 
 
-  body {
-    background-color: black;
-  }
-  
+.project-img {
+  width: 95%;
+  height: auto;
+  border: 2px solid #ADEFD1FF;
+  border-radius: 10%;
+}
 
-  nav,
-  footer {
-    padding: 1% 0;
-    font-size: 20px;
-   
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-  
-  header {
-    padding: 12% 0;
-    margin-top: -250px;
-  }
+.button {
+  border-radius: 10px;
+  padding: 10px;
+}
 
-  img.me-img {
-      height: 500px;
-  }
+.button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 
-  img.quizapp {
-    height: 40%;
-  }
+.code,
+.live {
+  color: black;
+  background-color: #ADEFD1FF;
+  border: 2px solid #00203FFF;
+}
 
-  img.bookmarksapp {
-    width: 50%;
-  }
 
-  h3 {
-    display: flex
-    margin-top: -250px;
-    margin-bottom: -700px;
-  }
-  
-  section {
-    min-width: 200px; 
-    padding: 10px;
-    color: white;
-  }
-    
-   
-  section:nth-child(2) {
-    background-color: rgb(218, 122, 32);
-  }
+.submit, .close {
+  color: #ADEFD1FF;
+  background-color: #00203FFF;
+  border: 2px solid #ADEFD1FF;
+  float: right;
+}
 
-  .icon-bar a:hover {
-    background-color: rgb(218, 122, 32); 
-    width: 50px;
-    height: 10px;
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 32px;
+}
+
+.social a {
+  color: #ADEFD1FF;
+}
+
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .headshot-img {
+    width: 225px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hamburger {
+    display: none;
   }
 
-  .bottom-bar a:hover {
-    background-color: rgb(218, 122, 32);
-  }
-
-  .bottom-bar {
+  .content {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0px auto;
   }
 
-  @media screen and (min-width: 464) {
-    .me-img {
-      height: 5%;
-    }
+  .project {
+    padding: 15px;
   }
 
-  @media screen and (min-width: 850px) {
-    .me-img {
-      height: 10%;
-    }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 15px;
   }
+}

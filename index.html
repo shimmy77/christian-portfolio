@@ -1,74 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Christian Shim's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <head>
+    <title>Christian Shim - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
       integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-      crossorigin="anonymous" />
-</head>
-<body>
-    <nav role="navigation" class="icon-bar"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <a class="active" href="#"><i class="fa fa-home"></i></a>
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header id="hero">
+      <h1>
+        Hello, I'm <span class="highlight">Christian Shim</span>, I'm a Fullstack
+        Developer. <br> 
+        Feel free to look at my work and contact me if you want!
+      </h1>
+    </header>
+    <nav>
+      <div class="hamburger">&#9776;</div>
+      <ul class="menu hidden">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
     </nav>
-    <main role="main">
-        <header role="banner"> 
-            <h1> Christian Shim </h1>
-                <br> Hello, I am a fullstack developer based in Chicago
-                <br> and a video game developing enthustiast.
-                <br> Feel free to look at my work and contact me if you want! </h1>                
-        </header>
+    <main aria-live="polite">
+      <section id="about">
+        <h2>About Me</h2>
 
-        <section>
-          <header> <h3> About Me <h3> </header> 
-            <img class="me-img" src="../imgs/me-destin.jpg" alt="A picture of Christian Shim"/>
-          <p> I am a recently learnt web developer. Coding has been a passion of mine
-            every since I touched a computer. I love puzzles and solving problems and because coding is 
-            like a big puzzle, I enjoy it. Its great when I fix a bug and watch an app
-            develop into something greater. 
-            
-            On my off days, I will be either playing video games, smashing my drums, or playing tennis.  </p>
-        </section>
-
-        <section>
-           <h4>Quiz App</h4> 
-           <img class="quizapp" src="imgs/quizapp-min.JPG" alt="Quiz App" />
-           <p>A simple quiz app where you are tested on your knowledge of types of dogs. <br>
-            Technologies used: HTML, CSS, JavaScript, jQuery</p>
-           <a href="https://github.com/shimmy77/shimmy77.github.io" target="_blank" aria-label="Github Repo"><i class="fab fa-github-square"></i></a>
-           <a href="https://shimmy77.github.io" target="_blank" aria-label=""><i class="fas fa-external-link-alt"></i></a>
-         </section>
-            <h4>Bookmarks</h4>
-            <img class="bookmarksapp" src="imgs/bookmarks-min.JPG" alt="Bookmarks App" />
-            <p>Track all your favorite websites across the internet, allowing you to create and rate all of your bookmarks. <br>
-                Technologies used: HTML, CSS, JavaScript, jQuery</p>
-            <a href="https://github.com/thinkful-ei-leopard/christian-bookmark-app" target="_blank" aria-label="Github Repo"><i class="fab fa-github-square"></i></a>
-            <a href="https://thinkful-ei-leopard.github.io/christian-bookmark-app/" target="_blank" aria-label=""><i class="fas fa-external-link-alt"></i></a>
-         </section>
-        <section>
-            
-        </section>
-
-        <section>
-           
-        </section>
-        
-        <section>
-           
-        </section>
-    </main>
-    <footer role="content-info">
-        <div class="bottom-bar">
-            <a href="https://github.com/shimmy77" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a>
-            <a href="mailto: christianshim@gmail.com?subject = Message&body = Message"> <i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/christian-shim-717a9125/"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
+        <div class="content">
+          <img
+            class="me-img"
+            src="../imgs/me-destin.jpg"
+            alt="A picture of Christian Shim"
+          />
+          <div>
+            <p>
+                Hello! I am a recently learnt web developer who is passionate about coding. 
+                Ever since I touched a computer, I have always been interested in programming. 
+                I love puzzles and solving problems and because coding is like a big puzzle, 
+                I enjoy it. Its great when I fix a bug and watch an app develop into something greater. 
+                
+                On my off days, I will be either playing video games, smashing my drums, or playing tennis.
+            </p>
+          </div>
         </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-container content">
+          <div class="project">
+            <h3>Dog QuizApp</h3>
+            <img
+              class="project-img"
+              src="imgs/quizapp-min.JPG"
+              alt="Quiz App"
+            />
+            <p>
+              <strong class="highlight">Dog Quiz</strong> is A simple quiz app where you are tested on your knowledge of types of dogs. This app is for everyone who thinks they know everything about dogs. This is a fun
+              little quiz I created to practice and show what I know about the frontend.
+            </p>
+            <p>Technologies Used: HTML, CSS, JavaScript, jQuery</p>
+            <div class="controls">
+              <a href="https://github.com/shimmy77/shimmy77.github.io" target="_blank" aria-label="Github Repo"><i class="fab fa-github-square"></i></a>
+              <a href="https://shimmy77.github.io" target="_blank" aria-label=""><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3>Bookmarks</h3>
+            <img
+              class="project-img"
+              src="imgs/bookmarks-min.JPG"
+              alt="Bookmarks App"
+            />
+            <p>
+              <strong class="highlight">Bookmark Central</strong> Track all your favorite websites across the internet, allowing you to create and rate all of your bookmarks. The web is filled with places to visit and a lot of them
+              you frequently visit. This is for the everyday web user who needs to keep track of all their favorite sites to visit, or not. I wanted to create something useful for people
+              and because I know almost everyone is on the internet, this is one way to help.
+            </p>
+            <p> Technologies Used: HTML, CSS, JavaScript, jQuery </p>
+            <div class="controls">
+              <a href="https://github.com/thinkful-ei-leopard/christian-bookmark-app" target="_blank" aria-label="Github Repo"><i class="fab fa-github-square"></i></a>
+              <a href="https://thinkful-ei-leopard.github.io/christian-bookmark-app/" target="_blank" aria-label=""><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+    <footer>
+      <div class="social">
+        <a href="https://github.com/shimmy77" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/christian-shim-717a9125/" target="_blank" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto: christianshim@gmail.com?subject = Message&body = Message" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </footer>
-</body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
 </html>
