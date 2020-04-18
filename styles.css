@@ -17,12 +17,9 @@
     line-height: 1.5;
   }
 
-  header {
-    
-  }
 
   body {
-    background-size: 100% 100%;
+    background-color: black;
   }
   
 
@@ -90,4 +87,14 @@
     justify-content: space-evenly;
   }
 
-  
+  @media screen and (min-width: 464) {
+    .me-img {
+      height: 5%;
+    }
+  }
+
+  @media screen and (min-width: 850px) {
+    .me-img {
+      height: 10%;
+    }
+  }
