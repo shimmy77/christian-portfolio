@@ -183,8 +183,8 @@ section:nth-child(even) {
   display: none;
 }
 
-@media screen and (min-width: 500px) {
-  .headshot-img {
+@media screen and (min-width: 320px) {
+  .me-img {
     width: 225px;
   }
 }
