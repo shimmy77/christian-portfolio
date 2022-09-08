@@ -137,7 +137,7 @@ section:nth-child(even) {
 
 
 .project-img {
-  width: 100%;
+  width: 350px;
   height: 25%;
   border: 2px solid #ADEFD1FF;
   border-radius: 10%;
